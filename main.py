@@ -52,7 +52,7 @@ class Lift(object):
         if self.aims == {-1}:
             if self.lvl == self.ind:
                 self.dir = 2
-                print('lift %d is free' % (self.ind))
+                print('lift %d is free ------------ free lift' % (self.ind))
             else:
             # if the lift is free, it comes to his index level
                 self.aims.discard(-1)
@@ -134,7 +134,7 @@ class Man(object):
                 choose_lift = False
 
         lifts[my_lift].set_lvl(self.lvl)
-        print('man%d is waiting for lift%d' % (self.ind, my_lift))
+        print('man%d is waiting for lift%d -------------> waiting' % (self.ind, my_lift))
         while lifts[my_lift].lvl != self.lvl:
             yield env.timeout(1)
 
@@ -153,7 +153,7 @@ class Man(object):
         whole_time += finish_time - tarrive
 
         lifts[my_lift].num_in -= 1
-        print('!!!man%d -->||%d in lift %d' % (self.ind, self.aim_lvl, my_lift))
+        print('!!!man%d -->||%d in lift %d ----------> goal' % (self.ind, self.aim_lvl, my_lift))
 
 
         # Create lifts and people
@@ -189,16 +189,7 @@ env.process(begin(env))
 
 env.run(until=60*60)
 
-print('Number of people who was served = %d, wait_time = %.2f, whole time they spend on transport = %d' %
+print('--------------------------------------------------------------')
+print('--------------------------------------------------------------')
+print('Passengers = %d, waiting_time = %.2f, transporting_time = %d' %
       (people_num, wait_time/people_num, whole_time/people_num))
-
-
-
-
-
-
-
-
-
-
-
