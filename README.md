@@ -16,6 +16,7 @@ Objectives:
 
 
 Lift`s model:
+---------------------------
 Modeling system - SimPy
 
 Amount of lifts – 6
