@@ -20,9 +20,9 @@ Lift`s model:
 ---------------------------
 Modeling system - SimPy
 
-Amount of lifts – 6
+Number of lifts – 6
 
-Amount of levels - {0, 1, 2, 3, 4, 5, 6, 7}
+Number of levels - {0, 1, 2, 3, 4, 5, 6, 7}
 
 Capacity – 11 people
 
