@@ -17,11 +17,17 @@ Objectives:
 
 Lift`s model:
 Modeling system - SimPy
+
 Amount of lifts – 6
+
 Amount of levels - {0, 1, 2, 3, 4, 5, 6, 7}
+
 Capacity – 11 people
+
 Time to get to next level– 3 sec
+
 Time to open/close lifts doors and to stop at a level – 2 sec
+
 Programm works – 3600 s
 
 
