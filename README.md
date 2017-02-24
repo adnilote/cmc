@@ -3,6 +3,7 @@ using Python and SimPy framework
 
 
 Objectives: 
+----------------------
 1. Create a model, which reflects:
 -	moving lifts between levels
 -	passenger`s  behavior (appearance, queueing, a way out of a lift)
@@ -10,7 +11,7 @@ Objectives:
 -	lift`s reaction on pushing a button
 -	lift`s action when not in use
 2. Get information about lifting operation
-	-  Average waiting time for a lift
+-  Average waiting time for a lift
 - Average transporting time
 3. Compare two algorithms of lifting operation (with/ without “basic level”) 
 
